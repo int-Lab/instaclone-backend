@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "practice",
   "scripts": {
-    "dev": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec npx ts-babel-node src/server.ts",
+    "check-types": "tsc"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/int-Lab/instaclone-backend/issues"
   },
-  "homepage": "https://github.com/int-Lab/instaclone-backend#readme"
+  "homepage": "https://github.com/int-Lab/instaclone-backend#readme",
+  "dependencies": {
+    "@babel/node": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "apollo-server": "^2.19.2",
+    "graphql": "^15.5.0",
+    "ts-babel-node": "^1.1.1",
+    "ts-node": "^9.1.1",
+    "typescript": "1.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "nodemon": "^2.0.7"
+  }
 }
