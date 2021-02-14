@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "practice",
   "scripts": {
-    "dev": "nodemon --exec babel-node server"
+    "dev": "nodemon --exec ts-node server.ts",
+    "check-types": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,26 @@
   "homepage": "https://github.com/int-Lab/instaclone-backend#readme",
   "dependencies": {
     "apollo-server": "^2.19.2",
-    "graphql": "^15.5.0"
+    "graphql": "^15.5.0",
+    "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.16",
     "@babel/node": "^7.12.13",
-    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
-    "nodemon": "^2.0.7"
+    "@babel/preset-typescript": "^7.12.16",
+    "@babel/register": "^7.12.13",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "commonjs": "^0.0.1",
+    "es6": "^0.0.7",
+    "esnext": "^3.3.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prisma": "^2.16.1",
+    "regenerator-runtime": "^0.13.7",
+    "typescript": "^4.1.5"
   }
 }
